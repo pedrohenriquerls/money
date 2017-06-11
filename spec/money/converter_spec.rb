@@ -1,9 +1,5 @@
 RSpec.describe Money::Converter do
   describe '.convert_to' do
-    before :all do
-      Money.conversion_rates('EUR', { 'USD'     => 1.11,
-                                      'Bitcoin' => 0.0047 })
-    end
     subject(:money) { Money.new(50, 'EUR') }
 
     context 'when receive the same currency' do

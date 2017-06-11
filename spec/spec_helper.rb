@@ -13,4 +13,9 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
+
+  config.before :suite do
+    Money.conversion_rates('EUR', { 'USD'     => 1.11,
+                                    'Bitcoin' => 0.0047 })
+  end
 end
