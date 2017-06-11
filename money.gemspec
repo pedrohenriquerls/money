@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Pedro Henrique Rodrigues']
   spec.email         = ['pedrohenriquerls@gmail.com']
 
-  spec.summary       = ''
-  spec.description   = ''
+  spec.summary       = 'A simple ruby gem to help you with currency conversions and simple money operations'
+  spec.description   = 'A simple ruby gem to help you with currency conversions and simple money operations'
   spec.homepage      = ''
   spec.license       = 'MIT'
 
