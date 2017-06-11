@@ -1,10 +1,12 @@
 require 'money/version'
 require 'money/converter'
 require 'money/comparator'
+require 'money/arithmetic'
 
 class Money
   include Converter
   include Comparator
+  include Arithmetic
 
   def self.conversion_rates(currency, rates)
     @@rates = rates
