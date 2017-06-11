@@ -24,6 +24,10 @@ RSpec.describe Money::Converter do
       it 'should convert EUR currency to Bitcoin' do
         expect(money.convert_to('Bitcoin')).to eq(Money.new(0.235, 'Bitcoin'))
       end
+
+      it 'should convert USD currency to EUR' do
+        expect(Money.new(55.5, 'USD').convert_to('EUR')).to eq(Money.new(50, 'EUR'))
+      end
     end
   end
 end
