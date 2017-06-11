@@ -18,7 +18,7 @@ class Money
   end
 
   def inspect
-    "#{format '%.2f', amount.round(2)} #{currency}"
+    "#{format '%.2f', round_amount} #{currency}"
   end
 
   private
@@ -29,5 +29,9 @@ class Money
 
   def rate(currency)
     @@rates[currency]
+  end
+
+  def round_amount
+    amount.round 2
   end
 end
