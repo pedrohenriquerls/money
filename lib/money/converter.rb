@@ -11,6 +11,10 @@ class Money
       end
     end
 
+    def convert_to_default_currency
+      convert_to default_currency
+    end
+
     private
 
     def create_money_to(new_currency)
